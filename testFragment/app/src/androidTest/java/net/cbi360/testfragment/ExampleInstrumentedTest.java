@@ -24,3 +24,4 @@ public class ExampleInstrumentedTest {
         assertEquals("net.cbi360.testfragment", appContext.getPackageName());
     }
 }
+

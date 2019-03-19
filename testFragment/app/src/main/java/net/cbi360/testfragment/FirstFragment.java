@@ -27,8 +27,13 @@ public class FirstFragment extends Fragment {
         return view;
     }
 
-    /* fragment传值 */
-//    public void setData(String a) {
-//
-//    }
+    /* 这个方法的作用是：当页面的状态/参数值丢失时我们来进行保存 */
+    @Override
+    // 当页面翻转时/按下Home键时/按下电源键时/Activity跳转时，会触发下面这个方法
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        // 保存值
+        // outState.putInt("index", index);
+    }
 }
